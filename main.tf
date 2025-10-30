@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "okta" {
-  org_name = "dev-96628677"
-  base_url = "okta.com"
-  api_token = "001v2t7j1bBzL44V45pBxy6TC4CUXRmP1Wm1SR8qV0"
+  org_name = var.okta_org_name
+  base_url = var.okta_base_url
+  api_token = var.okta_api_token
 }
 
 
    resource "okta_group" "example" {
-  name        = "Example1"
+  name        = "Example2"
   description = "My Example Group"
 }
