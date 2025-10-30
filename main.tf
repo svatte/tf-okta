@@ -15,6 +15,6 @@ provider "okta" {
 
 
    resource "okta_group" "example" {
-  name        = "Example2"
+  name        = "Example3"
   description = "My Example Group"
 }
